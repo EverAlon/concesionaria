@@ -1,0 +1,56 @@
+<div style="margin: 20px;">
+    <h4>Administración de Marcas</h4>
+
+    <h5>Alta de Marcas</h5>
+
+    <div class="col-sm-4">
+        <p>
+            <label>Nombre: </label>
+            <input type="text" class="form-control" [(ngModel)]="marca.nombre" />
+        </p>
+        <p>
+            <label>País de Origen: </label>
+            <input type="text" class="form-control" [(ngModel)]="marca.paisOrigen" />
+        </p>
+        <p>
+            <label>Sitio Web: </label>
+            <input type="text" class="form-control" [(ngModel)]="marca.sitioWeb" />
+        </p>
+        <table>
+            <tr>
+                <td>
+                    <button type="button" class="btn btn-primary" (click)="insertarMarca()">Insertar</button>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-warning" (click)="updateMarca()">Modificar</button>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-danger" (click)="deleteMarca()">Eliminar</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <hr />
+    <p></p>
+    <h4>Listado de Marcas</h4>
+    <table class="table">
+        <thead>
+            <th>Nombre</th>
+            <th>País de Origen</th>
+            <th>Sitio Web</th>
+            <th>Seleccionar</th>
+        </thead>
+        <tbody>
+            @for (marca of marcas; track marca.id) {
+                <tr>
+                    <td>{{ marca.nombre }}</td>
+                    <td>{{ marca.paisOrigen }}</td>
+                    <td>{{ marca.sitioWeb }}</td>
+                    <td>
+                        <button type="button" class="btn btn-success" (click)="selectMarca(marca)">Seleccionar</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
