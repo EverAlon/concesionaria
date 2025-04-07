@@ -1,0 +1,136 @@
+/* Estilo High-End - Inspirado en Pagani, Mazda RX-7, Jaguar F-Type y Supra MK4 */
+:host {
+    display: block;
+    padding: 5rem;
+    background: 
+      url('https://wallpapers.com/images/featured/nissan-gt-r-4k-dy960e9hbyidd1ln.jpg')  center/cover;
+    background-attachment: fixed;
+    color: #fff;
+    font-family: 'Orbitron', 'Audiowide', sans-serif;
+    min-height: 100vh;
+  }
+  /* styles.css o auto.component.css */
+  :host {
+      display: block;
+      padding: 20px;
+      background: 
+        linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.8)),
+        url('https://images.unsplash.com/photo-1583121274602-3e2820c69888?q=80&w=2070&auto=format&fit=crop') center/cover;
+      font-family: 'Arial', sans-serif;
+      color: #fff;
+    }
+    
+    h4 {
+      color: #FF2800; /* Rosso Corsa Ferrari */
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      text-shadow: 0 0 10px rgba(255, 40, 0, 0.5);
+    }
+    
+    h5 {
+      color: #FFD700; /* Amarillo Ferrari */
+      font-size: 1.5rem;
+      margin: 20px 0 15px;
+    }
+    
+    /* Filtro estilo Ferrari */
+    .row.mb-3 {
+      margin-bottom: 25px !important;
+    }
+    
+    label {
+      color: #FFD700;
+      font-weight: bold;
+      margin-bottom: 8px;
+      display: block;
+    }
+    
+    .form-control {
+      background-color: rgba(30, 30, 30, 0.8);
+      border: 1px solid #444;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 4px;
+      width: 100%;
+    }
+    
+    .form-control:focus {
+      border-color: #FF2800;
+      box-shadow: 0 0 0 0.2rem rgba(255, 40, 0, 0.25);
+    }
+    
+    /* Tabla estilo Ferrari */
+    .table {
+      width: 100%;
+      background-color: rgba(20, 20, 20, 0.9);
+      color: white;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    
+    .table thead {
+      background: linear-gradient(to right, #1a1a1a, #FF2800, #1a1a1a);
+    }
+    
+    .table th {
+      padding: 12px 15px;
+      text-align: left;
+      color: white;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+    }
+    
+    .table td {
+      padding: 12px 15px;
+      border-bottom: 1px solid rgba(255, 40, 0, 0.2);
+    }
+    
+    .table tbody tr:hover {
+      background-color: rgba(255, 40, 0, 0.05);
+    }
+    
+    /* Botones estilo Ferrari */
+    .btn {
+      padding: 8px 20px;
+      border-radius: 4px;
+      font-weight: bold;
+      transition: all 0.3s;
+    }
+    
+    .btn-success {
+      background-color: #FF2800;
+      border-color: #FF2800;
+      color: white;
+    }
+    
+    .btn-success:hover {
+      background-color: #e02400;
+      border-color: #e02400;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(255, 40, 0, 0.3);
+    }
+    
+    /* HR estilo Ferrari */
+    hr {
+      border-color: rgba(255, 40, 0, 0.3);
+      margin: 25px 0;
+    }
+    
+    /* Responsive */
+    @media (max-width: 768px) {
+      .col-sm-4 {
+        width: 100%;
+      }
+      
+      .table {
+        font-size: 0.9rem;
+      }
+      
+      h4 {
+        font-size: 1.8rem;
+      }
+    }

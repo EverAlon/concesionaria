@@ -1,19 +1,6 @@
 <div style="margin: 20px;">
     <h4>Catálogo de Autos</h4>
-
-    <!-- Filtro por marca -->
-<div class="row mb-3">
-    <div class="col-sm-4">
-        <label>Filtrar por Marca: </label>
-        <select class="form-control" [(ngModel)]="marcaFiltroId" (change)="filtrarAutos()">
-
-            @for (marca of marcas; track marca.id) {
-                <option [value]="marca.id">{{ marca.nombre }}</option>
-            }
-        </select>
-    </div>
-</div>
-
+    
     <h5>Alta de Autos</h5>
 
     <div class="col-sm-4">
@@ -54,6 +41,21 @@
                 </td>
             </tr>
         </table>
+    </div>
+    <hr/>
+    <div class="row mb-3">
+        <div class="col-sm-4">
+            <label>Filtrar por Marca: </label>
+            <select class="form-control" [(ngModel)]="marcaFiltroId" (change)="filtrarAutos()">
+    
+                @for (marca of marcas; track marca.id) {
+                    <option [value]="marca.id">{{ marca.nombre }}</option>
+                }
+            </select>
+        </div>
+        <div class="col-sm-4">
+            <button type="button" class="btn btn-secondary" (click)="marcaFiltroId = null; filtrarAutos()">Eliminar Filtro</button>
+        </div>
     </div>
     <hr />
     <p></p>

@@ -38,9 +38,10 @@
   
   /* Campos de formulario - Texto blanco brillante */
   .form-group {
+    width: 300px;
     margin-bottom: 1.8rem;
   }
-  
+
   .form-group label {
     display: block;
     margin-bottom: 0.6rem;

@@ -8,14 +8,6 @@
             <label>Nombre: </label>
             <input type="text" class="form-control" [(ngModel)]="marca.nombre" />
         </p>
-        <p>
-            <label>País de Origen: </label>
-            <input type="text" class="form-control" [(ngModel)]="marca.paisOrigen" />
-        </p>
-        <p>
-            <label>Sitio Web: </label>
-            <input type="text" class="form-control" [(ngModel)]="marca.sitioWeb" />
-        </p>
         <table>
             <tr>
                 <td>
@@ -36,16 +28,12 @@
     <table class="table">
         <thead>
             <th>Nombre</th>
-            <th>País de Origen</th>
-            <th>Sitio Web</th>
             <th>Seleccionar</th>
         </thead>
         <tbody>
             @for (marca of marcas; track marca.id) {
                 <tr>
                     <td>{{ marca.nombre }}</td>
-                    <td>{{ marca.paisOrigen }}</td>
-                    <td>{{ marca.sitioWeb }}</td>
                     <td>
                         <button type="button" class="btn btn-success" (click)="selectMarca(marca)">Seleccionar</button>
                     </td>
